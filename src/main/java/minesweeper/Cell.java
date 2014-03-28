@@ -1,5 +1,7 @@
 package minesweeper;
 
+import com.despegar.highflight.utils.Matrix2DCellPosition;
+
 public class Cell {
 	
 	Object value;
@@ -8,8 +10,8 @@ public class Cell {
 	public Matrix2DCellPosition getPosition() {
 		return position;
 	}
-	public void setPosition(Matrix2DCellPosition position) {
-		this.position = position;
+	public void setPosition(Matrix2DCellPosition position2) {
+		this.position = position2;
 	}
 	public Object getValue() {
 		return value;

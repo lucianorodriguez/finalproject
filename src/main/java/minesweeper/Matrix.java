@@ -3,6 +3,8 @@ package minesweeper;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.despegar.highflight.utils.Matrix2DCellPosition;
+
 
 public class Matrix {
 

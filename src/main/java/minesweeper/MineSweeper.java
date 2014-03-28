@@ -3,12 +3,15 @@ package minesweeper;
 public class MineSweeper {
 	
 	Grid grid;
-	boolean gameOver;
-	boolean winningGame;
+	boolean gameOver = false;
+	boolean winningGame = false;
 	
+	public MineSweeper (int row, int column) throws Exception{
+		new Grid (row, column);
+	}
 	// Allow the player to uncover a cell
 	void uncover(int row, int column){
-		grid.uncover(row, column);;
+		grid.uncover(row, column);
 	}
 	// Marking/unmarking suspicious cells
 	void setFlag(int row, int column){
@@ -19,6 +22,7 @@ public class MineSweeper {
 	}
 	// Game termination
 	boolean isGameOver(){
+		gameOver = grid.isGameOver();
 		return gameOver;
 	}
 	boolean isWinningGame(){

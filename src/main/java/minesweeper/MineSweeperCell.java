@@ -13,6 +13,7 @@ public abstract class MineSweeperCell extends Cell{
 		{
 			this.cover = false;
 		}
+		
 	}
 	public boolean isFlag() {
 		return flag;

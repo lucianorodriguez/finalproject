@@ -1,5 +1,7 @@
 package minesweeper;
 
+import com.despegar.highflight.utils.Matrix2DCellPosition;
+
 public class Mine extends MineSweeperCell
 {
 
